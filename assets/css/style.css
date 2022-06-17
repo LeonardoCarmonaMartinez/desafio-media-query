@@ -10,42 +10,101 @@ body {
     "header header header header"
     "menu menu menu menu"
     "main main main main"
-    "footer footer footer footer"
+    "footer footer footer footer";
 }
 
 header {
     grid-area: header;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
+    display: flex;    
     background-color: orange;
     color: white;
-    font-size: 1.25em;
+    height: 2.5em;
+    font-size: 1.5em;
 }
 
 .title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 44%;
     padding-left: 1em;
 }
 
-header i {
-    text-align: center;
+.title p {
+    padding-left: 0.25em;
+}
+
+.icon {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 56%;
     padding-right: 1em;
-   
 }
 
 menu {
     grid-area: menu;
+    background-color: rgb(167, 165, 165);
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.filter {
+    padding-bottom: 0.5em;
+}
+
+select {
+    width: 95%;
+    height: 30px;
 }
 
 main {
     grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border: 1px solid rgb(150, 140, 140);
+    margin: 1em;
+}
+
+.card img {
+    width: 100%;
+    height: 370px;
+}
+
+.card p {
+    font-size: 1.2em;
+    margin: 0.2em;
+}
+
+.card button {
+    width: 30%;
+    height: 30px;
+    margin-bottom: 0.75em;
+    margin-top: 0.2;
+    border-radius: 6px;
+    background-color: orange;
+    color: white;
+    font-size: 1em;
 }
 
 footer {
     grid-area: footer;
+    background-color: orange;
+    text-align: center;
+    height: 2em;
+    color: white;
+    font-size: 1.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
